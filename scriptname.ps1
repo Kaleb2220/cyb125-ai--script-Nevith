@@ -54,3 +54,9 @@ else {
 Write-Host "`nPassword strength: $strength" -ForegroundColor $color
 Write-Host "Reasons:"
 $reasons | ForEach-Object { Write-Host " - $_" }
+if ($plain.Length -gt 256) {
+    Write-Host "Password too long." -ForegroundColor Red
+    return
+$plain = $null
+[GC]::Collect()
+}
