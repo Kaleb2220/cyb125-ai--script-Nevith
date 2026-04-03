@@ -11,3 +11,5 @@ Then it calculates a total score, the score setermines whether the passwors is w
 It prints the results in color. Red = Weak, Yellow = Meduim, Green = Strong.
 And it lists the reasons like: -Contains uppercase letters, contains symbols, good length (12+)
 It is a mini password quality checker that you can run locally
+## Security Review
+I reviewd this script for unsafe input, dangerous commands, hard coded secrets, and file risks
